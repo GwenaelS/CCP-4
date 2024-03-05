@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    border-bottom: 2px solid black;
+}
+.txt-center{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+.informations, .formulaire{
+    width: 50%;
+}
+footer{
+    border-top: 2px solid black;
+}
