@@ -1,11 +1,6 @@
 header{
-    display: flex;
     border-bottom: 2px solid black;
 }
-.txt-center{
-    text-align: center;
-}
-
 main{
     display: flex;
     justify-content: space-evenly;
@@ -14,6 +9,73 @@ main{
 .informations, .formulaire{
     width: 50%;
 }
+/* ========================================================
+    CONTENUE INFORMATIFS
+========================================================= */
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+p{
+    margin-top: 1.8em;
+    line-height: 1.2;
+}
+.contact{
+    margin-top: 3em;
+}
+.contact{
+    font-size: 1.1em;
+}
+.contact span{
+    color: #E16432;
+}
+.ask-devis{
+    font-size: 1.6em;
+    font-weight: 600;
+}
+.ask-devis a{
+    text-decoration: none;
+    color: #DC5514;
+}
+/* ========================================================
+    CONTENUE FORMULAIRE
+========================================================= */
+input:not(:last-child){
+    width: 50%;
+    padding: 1%;
+    padding-left: 20px;
+}
+input:not(:first-child){
+    margin-top: 2em;
+}
+textarea{
+    width: 75%;
+    padding: 1%;
+    padding-left: 20px;
+    height: 100px;
+    margin-top: 2em;
+}
+input:last-child{
+    background-color: black;
+    color: white;
+    padding: 0.5em 0.9em;
+    border-radius: 20px;
+}
+/* ========================================================
+    CONTENUE FOOTER
+========================================================= */
 footer{
     border-top: 2px solid black;
+}
+.big{
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+footer p{
+    margin: 0.5em 0;
+}
+footer a{
+    text-decoration: none;
+    color: black;
 }

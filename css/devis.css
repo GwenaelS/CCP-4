@@ -1,0 +1,32 @@
+.flex{
+    display: flex;
+}
+.flex-columns{
+    flex-direction: column;
+}
+
+
+
+main{
+    background-color: rgb(203, 202, 202);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+fieldset{
+    border: solid 2px red;
+    margin-top: 2em;
+}
+
+
+
+.form-element{
+    padding: 1%;
+    padding-left: 1em;
+}
+.form-element-title{
+    width: 30%;
+}
+.form-element-choices{
+    width: 70%;
+}

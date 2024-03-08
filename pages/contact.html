@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
-    <header>
-        <div>
-            <a href="/index.html"><img src="/img/logo.png" alt=""></a>
-            <h1>GAUMART<br>
-            <span>Traiteur Paris</span></h1>
+    <header class="flex">
+        <div class="header-one flex">
+            <a href="../index.html">
+                <img id="logo-gaumart" src="../img/logo.png" alt="">
+            </a>
+            <div class="header-title">
+                <h1>GAUMART</h1>
+                <h2>Traiteur Paris</h2>
+            </div>
         </div>
-        <nav>
-            <ul>
+        <nav class="flex">
+            <ul class="flex">
                 <li><a href="#">Petits déjeuner</a></li>
                 <li><a href="#">Plateau repas</a></li>
                 <li><a href="#">Buffets</a></li>
                 <li><a href="#">Cocktails</a></li>
                 <li><a href="#">Menus</a></li>
-                <li><a href="pages/contact.html" target="_blank">Nous contacter</a></li>
+                <li><a href="#" target="_blank">Nous contacter</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="informations txt-center">
-            <h2>
-                GAUMART <br>
+            <h3>
+                GAUMART<br>
                 Traiteur et Organisateur de Réception
-            </h2>
+            </h3>
             <p>
                 Depuis plus de 25 ans, nous organisons<br>
                 vos cocktails, buffets, réceptions, ...
@@ -40,9 +45,13 @@
                 pour répondre au mieux à vos attentes.<br>
                 ...
             </p>
-            <p>Tél:01 45 83 78 78</p>
-            <p>Email: gaumart75@orange.fr</p>
-            <p>> Faire une demande de devis en ligne <</p>
+            <div class="contact">
+                <p>Tél:01 45 83 78 78</p>
+                <p>Email: <span>gaumart75@orange.fr</span></p>
+            </div>
+            <div class="ask-devis">
+                <p><a href="../pages/devis.html">> Faire une demande de devis en ligne <</a></p>
+            </div>
         </div>
         <div class="formulaire">
             <form action="post">
@@ -51,14 +60,16 @@
                 <input type="email" name="email" placeholder="EMAIL*"><br>
                 <input type="tel" name="telephone" placeholder="TEL*"><br>
                 <textarea placeholder="MESSAGE*"></textarea><br>
-                <input type="submit" value="Envoyer">
+                <input id="send" type="submit" value="ENVOYER">
             </form>
         </div>
     </main>
-    <footer>
-        <p>- GAUMART Traiteur Paris -</p>
-        <a href="#">Mentions légales</a>
-        <p>Gateartproject @ 2015</p>
+    <footer class="txt-center">
+        <p class="big">- GAUMART Traiteur Paris -</p>
+        <p>
+            <a href="#">Mentions légales</a>
+            | Gateartproject @ 2015
+        </p>
     </footer>
 </body>
 </html>
