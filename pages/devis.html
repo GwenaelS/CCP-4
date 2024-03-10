@@ -17,7 +17,7 @@
         <h4>Demande de devis</h4>
 <!-- FORMULAIRE (PARTIE 1)
     DE RECEPTION -->
-        <form action="">
+        <form action="" class="reception">
             <fieldset>
                 <legend>Réception</legend>
 <!--  -->
@@ -26,58 +26,58 @@
                         <div>Type de prestation :</div>
                     </div>
                     <div class="form-element-choices">
-                        <input type="checkbox" name="" id=""><label for="">Cocktail aperitif</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Cocktail déjeunatoire/dînatoire</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Buffet debout</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Buffet assis</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Repas servi à l'assiette</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Petit déjeuner</label><br>
-                        <label for="">Autres : </label><input type="text" name="" id="">
+                        <input type="checkbox" name="prestation" id="aperitif"><label for="aperitif">Cocktail aperitif</label><br>
+                        <input type="checkbox" name="prestation" id="cocktail"><label for="cocktail">Cocktail déjeunatoire/dînatoire</label><br>
+                        <input type="checkbox" name="prestation" id="debout"><label for="debout">Buffet debout</label><br>
+                        <input type="checkbox" name="prestation" id="assis"><label for="assis">Buffet assis</label><br>
+                        <input type="checkbox" name="prestation" id="assiette"><label for="assiette">Repas servi à l'assiette</label><br>
+                        <input type="checkbox" name="prestation" id="dejeuner"><label for="dejeuner">Petit déjeuner</label><br>
+                        <label for="prestation-other">Autres : </label><input type="text" name="prestation" id="prestation-other">
                     </div>
                 </div>
 <!--  -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Lieu de réception :</div>
+                        <label for="place">Lieu de réception :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="text" name="" id="">
+                        <input type="text" name="place" id="place">
                     </div>
                 </div>
 <!--  -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Date de réception :</div>
+                        <label for="date">Date de réception :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="date" name="" id="">
+                        <input type="date" name="date" id="date">
                     </div>
                 </div>
 <!--  -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Heure de début :</div>
+                        <label for="time-start">Heure de début :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="time" name="" id="">
+                        <input type="time" name="time-start" id="time-start">
                     </div>
                 </div>
 <!--  -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Heure de fin :</div>
+                        <label for="time-end">Heure de fin :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="time" name="" id="">
+                        <input type="time" name="time-end" id="time-end">
                     </div>
                 </div>
 <!--  -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Nombre de convives :</div>
+                        <label for="number-personne">Nombre de convives :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="number" name="" id="">
+                        <input type="number" name="number-personne" id="number-personne">
                     </div>
                 </div>
 <!--  -->
@@ -86,8 +86,8 @@
                         <div>Personnels souhaités :</div>
                     </div>
                     <div class="form-element-choices">
-                        <input type="radio" name="" id=""><label for="">Oui</label>
-                        <input type="radio" name="" id=""><label for="">Non</label>
+                        <input type="radio" name="radio" id="yes"><label for="yes">Oui</label>
+                        <input type="radio" name="radio" id="no"><label for="no">Non</label>
                     </div>
                 </div>
             </fieldset>
@@ -95,7 +95,7 @@
 
 <!-- FORMULAIRE (PARTIE 2)
     DE SERVICES -->
-        <form action="">
+        <form action="" class="services">
             <fieldset>
                 <legend>Services</legend>
 <!-- SERVICES
@@ -105,13 +105,13 @@
                         <div>Boissons alcolisées :</div>
                     </div>
                     <div class="form-element-choices">
-                        <input type="checkbox" name="" id=""><label for="">Vin rouge</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Vin blanc</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Vin rosé</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Champagne</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Crémant</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Kir</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Alcool fort</label><br>
+                        <input type="checkbox" name="alcool" id="rouge"><label for="rouge">Vin rouge</label><br>
+                        <input type="checkbox" name="alcool" id="blanc"><label for="blanc">Vin blanc</label><br>
+                        <input type="checkbox" name="alcool" id="rose"><label for="rose">Vin rosé</label><br>
+                        <input type="checkbox" name="alcool" id="champagne"><label for="champagne">Champagne</label><br>
+                        <input type="checkbox" name="alcool" id="cremant"><label for="cremant">Crémant</label><br>
+                        <input type="checkbox" name="alcool" id="kir"><label for="kir">Kir</label><br>
+                        <input type="checkbox" name="alcool" id="fort"><label for="fort">Alcool fort</label><br>
                     </div>
                 </div>
 <!-- SERVICES
@@ -121,9 +121,9 @@
                         <div>Boissons non alcolisées :</div>
                     </div>
                     <div class="form-element-choices">
-                        <input type="checkbox" name="" id=""><label for="">Eaux minerales plate et gazeuse</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Café</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Soft (jus de fruits et sodas)</label><br>
+                        <input type="checkbox" name="boissons" id="eau"><label for="eau">Eaux minerales plate et gazeuse</label><br>
+                        <input type="checkbox" name="boissons" id="cafe"><label for="cafe">Café</label><br>
+                        <input type="checkbox" name="boissons" id="soft"><label for="soft">Soft (jus de fruits et sodas)</label><br>
                     </div>
                 </div>
 <!-- SERVICES
@@ -133,16 +133,16 @@
                         <div>Besoins complémentaires :</div>
                     </div>
                     <div class="form-element-choices">
-                        <input type="checkbox" name="" id=""><label for="">Materiel jetable</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Materiel de réception à louer</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Personnel de service</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Décoration de buffet</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Décoration florale</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Centre de table en fleurs fraiches</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Nappage</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Animation musicale</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Salles de réception</label><br>
-                        <label for="">Autres : </label><input type="text" name="" id="">
+                        <input type="checkbox" name="besoins" id="jetable"><label for="jetable">Materiel jetable</label><br>
+                        <input type="checkbox" name="besoins" id="a-louer"><label for="a-louer">Materiel de réception à louer</label><br>
+                        <input type="checkbox" name="besoins" id="personnel"><label for="personnel">Personnel de service</label><br>
+                        <input type="checkbox" name="besoins" id="deco-buffet"><label for="deco-buffet">Décoration de buffet</label><br>
+                        <input type="checkbox" name="besoins" id="deco-floral"><label for="deco-floral">Décoration florale</label><br>
+                        <input type="checkbox" name="besoins" id="table"><label for="table">Centre de table en fleurs fraiches</label><br>
+                        <input type="checkbox" name="besoins" id="nappage"><label for="nappage">Nappage</label><br>
+                        <input type="checkbox" name="besoins" id="musique"><label for="musique">Animation musicale</label><br>
+                        <input type="checkbox" name="besoins" id="salle"><label for="salle">Salles de réception</label><br>
+                        <label for="besoins-autres">Autres : </label><input type="text" name="besoins" id="besoins-autres">
                     </div>
                 </div>
             </fieldset>
@@ -150,18 +150,18 @@
 
 <!-- FORMULAIRE (PARTIE 3)
     DE BUDGET -->
-        <form action="">
+        <form action="" class="budget">
             <fieldset>
                 <legend>Votre budget</legend>
 <!-- BUDGET == 
     $BUDGET -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <label for="">Budget par personne :</label>
+                        <div>Budget par personne :</div>
                     </div>
                     <div class="form-element-choices">
-                        <label for="">Entre </label><input type="text" name="" id="">
-                        <label for="">et </label><input type="text" name="" id="">
+                        <label for="budget-entre">Entre </label><input type="text" name="budget-entre" id="budget-entre">
+                        <label for="budget-and">et </label><input type="text" name="budget-and" id="budget-and">
                     </div>
                 </div>
             </fieldset>
@@ -169,67 +169,67 @@
 
 <!-- FORMULAIRE (PARTIE 4) 
     DE COORDONNEES -->
-        <form action="">
+        <form action="" class="coordonnees">
             <fieldset>
                 <legend>Vos coordonnées</legend>
 <!-- COORDONNEES
     == NAME -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Nom :</div>
+                        <label for="nom">Nom :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="text" name="" id="">
+                        <input type="text" name="nom" id="nom">
                     </div>
                 </div>
 <!-- COORDONNEES
     == FIRST NAME  -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Prénom :</div>
+                        <label for="prenom">Prénom :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="text" name="" id="">
+                        <input type="text" name="prenom" id="prenom">
                     </div>
                 </div>
 <!-- COORDONNEES
     == ENTREPRISE NAME  -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Société :</div>
+                        <label for="societe">Société :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="text" name="" id="">
+                        <input type="text" name="societe" id="societe">
                     </div>
                 </div>
 <!-- COORDONNEES
     == ADRESSE -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Adresse :</div>
+                        <label for="adresse">Adresse :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="text" name="" id="">
+                        <input type="text" name="adresse" id="adresse">
                     </div>
                 </div>
 <!-- COORDONNEES
     == TELEPHONE -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Téléphone :</div>
+                        <label for="telephone">Téléphone :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="tel" name="" id="">
+                        <input type="tel" name="telephone" id="telephone">
                     </div>
                 </div>
 <!-- COORDONNEES
     == EMAIL -->
                 <div class="form-element flex">
                     <div class="form-element-title">
-                        <div>Email :</div>
+                        <label for="email">Email :</label>
                     </div>
                     <div class="form-element-choices">
-                        <input type="email" name="" id="">
+                        <input type="email" name="email" id="email">
                     </div>
                 </div>
             </fieldset>
