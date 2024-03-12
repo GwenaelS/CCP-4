@@ -21,16 +21,14 @@ header{
     margin-left: 50px;
     height: 95%;
 }
-h1, h2{
+h1{
     font-weight: 600;
     margin-left: 10px;
     font-size: 1.875rem;
-}
-h1{
     margin-top: 10px;
     color: #F68704;
-}
-h2{
+} 
+h1>span{
     color: #192126;
 }
 nav{

@@ -1,10 +1,129 @@
 /* ========================================================
     CONTENUE PRINCIPALE
 ========================================================= */
-main{
-    height: 70%;
-    position: relative;
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
+h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+p{
+    margin-top: 1.8em;
+    line-height: 1.2;
+}
+/* ========================================================
+    SECTION PETIT DEJEUNER
+========================================================= */
+#petit-dejeuner{
+    height: 500px;
+    background-color: black;
+    color: white;
+}
+/* ========================================================
+    SECTION PLATEAU REPAS
+========================================================= */
+#plateau-repas{
+    height: 500px;
+    background-color: white;
+    color: black;
+}
+/* ========================================================
+    SECTION BUFFETS
+========================================================= */
+#buffets{
+    height: 500px;
+    background-color: black;
+    color: white;
+}
+/* ========================================================
+    SECTION COCKTAILS
+========================================================= */
+#cocktails{
+    height: 500px;
+    background-color: white;
+    color: black;
+}
+/* ========================================================
+    SECTION MENUS
+========================================================= */
+#menus{
+    height: 500px;
+    background-color: black;
+    color: white;
+}
+/* ========================================================
+    SECTION CONTACTS
+========================================================= */
+#nous-contactez{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0;
+    border-bottom: solid black 2px;
+    background-color: white;
+}
+.informations, .formulaire{
+    width: 50%;
+}
+.contacts{
+    margin-top: 3em;
+    font-size: 1.1em;
+}
+.contacts span{
+    color: #E16432;
+}
+.ask-devis{
+    font-size: 1.6em;
+    font-weight: 600;
+}
+.ask-devis a{
+    text-decoration: none;
+    color: #DC5514;
+}
+/* ========================================================
+    CONTENUE CONTACTS FORMULAIRE
+========================================================= */
+input:not(:last-child){
+    width: 50%;
+    padding: 1%;
+    padding-left: 20px;
+}
+input:not(:first-child){
+    margin-top: 2em;
+}
+textarea{
+    width: 75%;
+    padding: 1%;
+    padding-left: 20px;
+    height: 100px;
+    margin-top: 2em;
+}
+input:last-child{
+    background-color: black;
+    color: white;
+    padding: 0.5em 0.9em;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========================================================
     FOOTER
 ========================================================= */
