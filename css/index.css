@@ -4,6 +4,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+main{
+    border-bottom: solid 2px black;
+}
 h2{
     font-size: 1.5rem;
     font-weight: 800;
@@ -13,79 +16,86 @@ footer p{
     margin-top: 1.8em;
     line-height: 1.2;
 }
-main{
-    border-bottom: solid 2px black;
-}
 /* ========================================================
-    SECTION PETIT DEJEUNER
+    SECTION TEMPLATES
 ========================================================= */
-#petit-dejeuner{
+#petit-dejeuner, #plateau-repas, #buffets, #cocktails, #menus{
     height: 350px;
-    background-color: rgb(25, 25, 25);
-    color: white;
     align-items: center;
     justify-content: space-around;
 }
+#petit-dejeuner, #buffets, #menus{
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+#plateau-repas, #cocktails, #nous-contactez{
+    background-color: rgb(208, 205, 205);
+    color: black;
+}
+.dej-content ul, .buffets-content ul, .buffets-content2 ul{
+    list-style: circle;
+}
+.dej-content a, .buffets-content2 a{
+    color: white;
+}
+.plateau-content a{
+    color: black;
+}
+/* ========================================================
+    SECTION PETIT DEJEUNER / PLATEAU REPAS
+========================================================= */
 .dej-content, .plateau-content{
     width: 40%;
-    border: solid 3px white;
 }
-.dej-content p{
+.dej-content p, .plateau-content p, .buffets-content p, .buffets-content2 p{
     margin-bottom: 1em;
+}
+.dej-content ul{
+    margin-top: 0.5em;
 }
 .dej-img, .plateau-img{
     width: 50%;
     background-image: url(/img/dejeuner.jpg);
     background-size: 100%;
-    border: solid 3px white;
 }
-/* ========================================================
-    SECTION PLATEAU REPAS
-========================================================= */
-#plateau-repas{
-    height: 350px;
-    background-color: rgb(208, 205, 205);
-    color: black;
-    align-items: center;
-    justify-content: space-around;
+#plateau-repas h2{
+    margin-bottom: 0.5em ;
 }
 /* ========================================================
     SECTION BUFFETS
 ========================================================= */
-#buffets{
-    height: 350px;
-    background-color: black;
-    color: white;
-    align-items: center;
-    justify-content: space-around;
+.buffets-content, .buffets-content2{
+    width: 25%;
+}
+.buffets-img{
+    width: 40%;
+    background-image: url(/img/buffets.jpg);
+    background-size: 100%;
+}
+.buffets-content h3, .buffets-content2 li{
+    margin: 0.5em 0;
 }
 /* ========================================================
     SECTION COCKTAILS
 ========================================================= */
-#cocktails{
-    height: 350px;
-    background-color: white;
-    color: black;
-    align-items: center;
-    justify-content: space-around;
+.cocktails-img{
+    width: 35%;
+    background-image: url(/img/cocktails.jpg);
+    background-size: 100%;
+}
+.cocktails-content{
+    width: 20%;
 }
 /* ========================================================
     SECTION MENUS
 ========================================================= */
-#menus{
-    height: 500px;
-    background-color: black;
-    color: white;
-}
+
 /* ========================================================
     SECTION CONTACTS
 ========================================================= */
 #nous-contactez{
-    display: flex;
-    justify-content: space-evenly;
     padding: 40px 0;
     border-bottom: solid black 2px;
-    background-color: white;
 }
 .informations, .formulaire{
     width: 50%;
@@ -105,9 +115,9 @@ main{
     text-decoration: none;
     color: #DC5514;
 }
-/* ========================================================
+/* ================================
     CONTENUE CONTACTS FORMULAIRE
-========================================================= */
+*/
 input:not(:last-child){
     width: 50%;
     padding: 1%;
