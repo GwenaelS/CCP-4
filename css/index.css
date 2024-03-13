@@ -32,13 +32,13 @@ footer p{
     background-color: rgb(208, 205, 205);
     color: black;
 }
-.dej-content ul, .buffets-content ul, .buffets-content2 ul{
+.dej-content ul, .buffets-content ul, .buffets-content2 ul, .cocktails-content ul{
     list-style: circle;
 }
 .dej-content a, .buffets-content2 a{
     color: white;
 }
-.plateau-content a{
+.plateau-content a, .cocktails-content a{
     color: black;
 }
 /* ========================================================
@@ -47,10 +47,10 @@ footer p{
 .dej-content, .plateau-content{
     width: 40%;
 }
-.dej-content p, .plateau-content p, .buffets-content p, .buffets-content2 p{
+.dej-content p, .plateau-content p, .buffets-content p, .buffets-content2 p, .cocktails-content p{
     margin-bottom: 1em;
 }
-.dej-content ul{
+.dej-content ul, .cocktails-content ul{
     margin-top: 0.5em;
 }
 .dej-img, .plateau-img{
