@@ -9,41 +9,65 @@ h2{
     font-weight: 800;
     line-height: 1.5;
 }
-p{
+footer p{
     margin-top: 1.8em;
     line-height: 1.2;
+}
+main{
+    border-bottom: solid 2px black;
 }
 /* ========================================================
     SECTION PETIT DEJEUNER
 ========================================================= */
 #petit-dejeuner{
-    height: 500px;
-    background-color: black;
+    height: 350px;
+    background-color: rgb(25, 25, 25);
     color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.dej-content, .plateau-content{
+    width: 40%;
+    border: solid 3px white;
+}
+.dej-content p{
+    margin-bottom: 1em;
+}
+.dej-img, .plateau-img{
+    width: 50%;
+    background-image: url(/img/dejeuner.jpg);
+    background-size: 100%;
+    border: solid 3px white;
 }
 /* ========================================================
     SECTION PLATEAU REPAS
 ========================================================= */
 #plateau-repas{
-    height: 500px;
-    background-color: white;
+    height: 350px;
+    background-color: rgb(208, 205, 205);
     color: black;
+    align-items: center;
+    justify-content: space-around;
 }
 /* ========================================================
     SECTION BUFFETS
 ========================================================= */
 #buffets{
-    height: 500px;
+    height: 350px;
     background-color: black;
     color: white;
+    align-items: center;
+    justify-content: space-around;
 }
 /* ========================================================
     SECTION COCKTAILS
 ========================================================= */
 #cocktails{
-    height: 500px;
+    height: 350px;
     background-color: white;
     color: black;
+    align-items: center;
+    justify-content: space-around;
 }
 /* ========================================================
     SECTION MENUS
