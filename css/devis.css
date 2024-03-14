@@ -1,18 +1,16 @@
-.flex{
-    display: flex;
-}
 .flex-columns{
     flex-direction: column;
 }
-main{
-    background-color: rgb(203, 202, 202);
+#devis{
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1em auto;
+    border: solid 2px black;
+    
 }
-fieldset{
+#devis fieldset{
+    margin: 1em;
     border: solid 2px red;
-    margin-top: 2em;
+    background-color: rgb(203, 202, 202);
 }
 .form-element{
     padding: 1%;

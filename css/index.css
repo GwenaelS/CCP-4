@@ -1,22 +1,4 @@
 /* ========================================================
-    CONTENUE PRINCIPALE
-========================================================= */
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-main{
-    border-bottom: solid 2px black;
-}
-h2{
-    font-size: 1.5rem;
-    font-weight: 800;
-    line-height: 1.5;
-}
-footer p{
-    margin-top: 1.8em;
-    line-height: 1.2;
-}
-/* ========================================================
     SECTION TEMPLATES
 ========================================================= */
 #petit-dejeuner, #plateau-repas, #buffets, #cocktails, #menus{
@@ -32,7 +14,7 @@ footer p{
     background-color: rgb(208, 205, 205);
     color: black;
 }
-.dej-content ul, .buffets-content ul, .buffets-content2 ul, .cocktails-content ul{
+.dej-content ul{
     list-style: circle;
 }
 .dej-content a, .buffets-content2 a{
@@ -55,22 +37,26 @@ footer p{
 }
 .dej-img, .plateau-img{
     width: 50%;
-    background-image: url(/img/dejeuner.jpg);
-    background-size: 100%;
+    height: 300px;
+    background-color: grey;
 }
 #plateau-repas h2{
     margin-bottom: 0.5em ;
+}
+.plateau-content{
+    text-align: right;
 }
 /* ========================================================
     SECTION BUFFETS
 ========================================================= */
 .buffets-content, .buffets-content2{
     width: 25%;
+    text-align: center;
 }
 .buffets-img{
     width: 40%;
-    background-image: url(/img/buffets.jpg);
-    background-size: 100%;
+    height: 300px;
+    background-color: grey;
 }
 .buffets-content h3, .buffets-content2 li{
     margin: 0.5em 0;
@@ -80,22 +66,37 @@ footer p{
 ========================================================= */
 .cocktails-img{
     width: 35%;
-    background-image: url(/img/cocktails.jpg);
-    background-size: 100%;
+    height: 300px;
+    background-color: grey;
 }
 .cocktails-content{
+    text-align: center;
     width: 20%;
 }
 /* ========================================================
     SECTION MENUS
 ========================================================= */
-
+.menus-img{
+    width: 35%;
+    height: 300px;
+    background-color: grey;
+}
+.menus-content, .menus-content2{
+    width: 20%;
+}
+.menus-content{
+    padding-right: 30px;
+    text-align: right;
+}
+.menus-content2{
+    padding-left: 30px;
+    text-align: left;
+}
 /* ========================================================
     SECTION CONTACTS
 ========================================================= */
 #nous-contactez{
     padding: 40px 0;
-    border-bottom: solid black 2px;
 }
 .informations, .formulaire{
     width: 50%;
@@ -108,32 +109,30 @@ footer p{
     color: #E16432;
 }
 .ask-devis{
+    margin-top: 1.5em;
     font-size: 1.6em;
     font-weight: 600;
-}
-.ask-devis a{
-    text-decoration: none;
     color: #DC5514;
 }
 /* ================================
     CONTENUE CONTACTS FORMULAIRE
 */
-input:not(:last-child){
+.formulaire input:not(:last-child){
     width: 50%;
     padding: 1%;
     padding-left: 20px;
 }
-input:not(:first-child){
+.formulaire input:not(:first-child){
     margin-top: 2em;
 }
-textarea{
+.formulaire textarea{
     width: 75%;
     padding: 1%;
     padding-left: 20px;
     height: 100px;
     margin-top: 2em;
 }
-input:last-child{
+.formulaire input:last-child{
     background-color: black;
     color: white;
     padding: 0.5em 0.9em;
