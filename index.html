@@ -7,7 +7,9 @@
     <meta name="description" content="#">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bases.css">
+    <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/devis.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-png">
 </head>
@@ -27,6 +29,9 @@
                 <li><a href="#nous-contactez">Nous contacter</a></li>
             </ul>
         </nav>
+        <div id="btn-theme">
+            <input type="checkbox" id="darkModeButton">
+        </div>
     </header>
     <main>
 <!-- SECTION 
@@ -150,7 +155,7 @@
                         </p>
                     </li>
                 </ul>
-                <a href="#">> Découvrez tout nos cocktails <</a>
+                <a id="cocktails-a" href="#">> Découvrez tout nos cocktails <</a>
             </div>
             <div class="cocktails-img"></div>
         </section>
@@ -171,6 +176,7 @@
                     Menu du Chef<br>
                     Menu Mer et Terre
                 </p>
+                <a href="#">Trouvez en encore plus !</a>
             </div>
             <div class="menus-img"></div>
             <div class="menus-content2">
@@ -187,6 +193,7 @@
                     Menu Brunch<br>
                     Menu Surprise
                 </p>
+                <a href="#">Trouvez en encore plus !</a>
             </div>
             
         </section>
@@ -226,35 +233,20 @@
             </div>
         </section>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- ==============================================================================
 CECI CONTIENT LE DEVIS ENTIER, PAR DEFAUT CACHER
 ============================================================================== -->
 <!-- FORMULAIRE (PARTIE 1)
     DE RECEPTION -->
-        <form method="post" id="devis" class="form-hidden">
-            <h3>GAUMART</h3>
-            <p>Tél:01 45 83 78 78</p>
-            <p>Email: <span>gaumart75@orange.fr</span></p>
-            <button onclick="closeDevis()">FERMER</button>
-            <fieldset id="reception">
+    <section class="devis hidden">
+        <form method="post" name="devis" onsubmit="afficheDevis()" class="devis-form">
+            <div class="devis-txt txt-center">
+                <h2>GAUMART</h2>
+                <p>Tél:01 45 83 78 78</p>
+                <p>Email: <span>gaumart75@orange.fr</span></p>
+                <button onclick="closeDevis()">FERMER</button>
+            </div>
+            <fieldset name="reception" id="reception">
                 <legend>Réception</legend>
                 <div class="form-element flex">
                     <div class="form-element-title">
@@ -455,15 +447,16 @@ CECI CONTIENT LE DEVIS ENTIER, PAR DEFAUT CACHER
             </fieldset>
             <input type="submit" value="VALIDER">
         </form>
-
-
+    </section>
     <footer class="txt-center">
         <p class="big">- GAUMART Traiteur Paris -</p>
         <p>
-            <a href="#">Mentions légales</a>
+            <a id="footer-a" href="#">Mentions légales</a>
             | Gateartproject @ 2015
         </p>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/devis.js"></script>
+    <script src="js/dark.js"></script>
 </body>
 </html>

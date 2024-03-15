@@ -1,0 +1,46 @@
+/* ========================================================
+    SECTION CONTACTS
+========================================================= */
+#nous-contactez{
+    padding: 40px 0;
+}
+.informations, .formulaire{
+    width: 50%;
+}
+.contacts{
+    margin-top: 3em;
+    font-size: 1.1em;
+}
+.contacts span{
+    color: #E16432;
+}
+.ask-devis{
+    margin-top: 1.5em;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #DC5514;
+}
+/* ================================
+    CONTENUE CONTACTS FORMULAIRE
+*/
+.formulaire input:not(:last-child){
+    width: 50%;
+    padding: 1%;
+    padding-left: 20px;
+}
+.formulaire input:not(:first-child){
+    margin-top: 2em;
+}
+.formulaire textarea{
+    width: 75%;
+    padding: 1%;
+    padding-left: 20px;
+    height: 100px;
+    margin-top: 2em;
+}
+.formulaire input:last-child{
+    background-color: black;
+    color: white;
+    padding: 0.5em 0.9em;
+    border-radius: 20px;
+}

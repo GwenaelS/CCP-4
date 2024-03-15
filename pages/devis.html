@@ -5,235 +5,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/bases.css">
     <link rel="stylesheet" href="/css/devis.css">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <main>
-        <div>
-            <h1><a href="../index.html">Gaumart</a></h1>
-            <h2>Tél: 01 45 83 78 78</h2>
-            <h3>Email: gaumart75@orange.fr</h3>
-        </div>
-        <h4>Demande de devis</h4>
-<!-- FORMULAIRE (PARTIE 1)
-    DE RECEPTION -->
-        <form action="" class="reception">
-            <fieldset>
-                <legend>Réception</legend>
-<!--  -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <div>Type de prestation :</div>
-                    </div>
-                    <div class="form-element-choices">
-                        <input type="checkbox" name="prestation" id="aperitif"><label for="aperitif">Cocktail aperitif</label><br>
-                        <input type="checkbox" name="prestation" id="cocktail"><label for="cocktail">Cocktail déjeunatoire/dînatoire</label><br>
-                        <input type="checkbox" name="prestation" id="debout"><label for="debout">Buffet debout</label><br>
-                        <input type="checkbox" name="prestation" id="assis"><label for="assis">Buffet assis</label><br>
-                        <input type="checkbox" name="prestation" id="assiette"><label for="assiette">Repas servi à l'assiette</label><br>
-                        <input type="checkbox" name="prestation" id="dejeuner"><label for="dejeuner">Petit déjeuner</label><br>
-                        <label for="prestation-other">Autres : </label><input type="text" name="prestation" id="prestation-other">
-                    </div>
+        <section class="devis">
+            <form method="post" name="devis" onsubmit="afficheDevis()" class="devis-form">
+                <div class="devis-txt txt-center">
+                    <h2>GAUMART</h2>
+                    <p>Tél:01 45 83 78 78</p>
+                    <p>Email: <span>gaumart75@orange.fr</span></p>
+                    <button onclick="closeDevis()">FERMER</button>
                 </div>
-<!--  -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="place">Lieu de réception :</label>
+                <fieldset name="reception" id="reception">
+                    <legend>Réception</legend>
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <div>Type de prestation :</div>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="checkbox" name="prestation" id="aperitif"><label for="aperitif">Cocktail aperitif</label><br>
+                            <input type="checkbox" name="prestation" id="cocktail"><label for="cocktail">Cocktail déjeunatoire/dînatoire</label><br>
+                            <input type="checkbox" name="prestation" id="debout"><label for="debout">Buffet debout</label><br>
+                            <input type="checkbox" name="prestation" id="assis"><label for="assis">Buffet assis</label><br>
+                            <input type="checkbox" name="prestation" id="assiette"><label for="assiette">Repas servi à l'assiette</label><br>
+                            <input type="checkbox" name="prestation" id="dejeuner"><label for="dejeuner">Petit déjeuner</label><br>
+                            <label for="prestation-other">Autres : </label><input type="text" name="prestation" id="prestation-other">
+                        </div>
                     </div>
-                    <div class="form-element-choices">
-                        <input type="text" name="place" id="place">
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="place">Lieu de réception :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="text" name="place" id="place">
+                        </div>
                     </div>
-                </div>
-<!--  -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="date">Date de réception :</label>
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="date">Date de réception :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="date" name="date" id="date">
+                        </div>
                     </div>
-                    <div class="form-element-choices">
-                        <input type="date" name="date" id="date">
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="time-start">Heure de début :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="time" name="time-start" id="time-start">
+                        </div>
                     </div>
-                </div>
-<!--  -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="time-start">Heure de début :</label>
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="time-end">Heure de fin :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="time" name="time-end" id="time-end">
+                        </div>
                     </div>
-                    <div class="form-element-choices">
-                        <input type="time" name="time-start" id="time-start">
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="number-personne">Nombre de convives :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="number" name="number-personne" id="number-personne">
+                        </div>
                     </div>
-                </div>
-<!--  -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="time-end">Heure de fin :</label>
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <div>Personnels souhaités :</div>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="radio" name="radio" id="yes"><label for="yes">Oui</label>
+                            <input type="radio" name="radio" id="no"><label for="no">Non</label>
+                        </div>
                     </div>
-                    <div class="form-element-choices">
-                        <input type="time" name="time-end" id="time-end">
+                </fieldset>
+        <!-- FORMULAIRE (PARTIE 2)
+        DE SERVICES -->
+                <fieldset id="services">
+                    <legend>Services</legend>
+        <!-- SERVICES
+        == $ -->
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <div>Boissons alcolisées :</div>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="checkbox" name="alcool" id="rouge"><label for="rouge">Vin rouge</label><br>
+                            <input type="checkbox" name="alcool" id="blanc"><label for="blanc">Vin blanc</label><br>
+                            <input type="checkbox" name="alcool" id="rose"><label for="rose">Vin rosé</label><br>
+                            <input type="checkbox" name="alcool" id="champagne"><label for="champagne">Champagne</label><br>
+                            <input type="checkbox" name="alcool" id="cremant"><label for="cremant">Crémant</label><br>
+                            <input type="checkbox" name="alcool" id="kir"><label for="kir">Kir</label><br>
+                            <input type="checkbox" name="alcool" id="fort"><label for="fort">Alcool fort</label><br>
+                        </div>
                     </div>
-                </div>
-<!--  -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="number-personne">Nombre de convives :</label>
+        <!-- SERVICES
+        == $ -->
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <div>Boissons non alcolisées :</div>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="checkbox" name="boissons" id="eau"><label for="eau">Eaux minerales plate et gazeuse</label><br>
+                            <input type="checkbox" name="boissons" id="cafe"><label for="cafe">Café</label><br>
+                            <input type="checkbox" name="boissons" id="soft"><label for="soft">Soft (jus de fruits et sodas)</label><br>
+                        </div>
                     </div>
-                    <div class="form-element-choices">
-                        <input type="number" name="number-personne" id="number-personne">
+        <!-- SERVICES
+        == $ -->
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <div>Besoins complémentaires :</div>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="checkbox" name="besoins" id="jetable"><label for="jetable">Materiel jetable</label><br>
+                            <input type="checkbox" name="besoins" id="a-louer"><label for="a-louer">Materiel de réception à louer</label><br>
+                            <input type="checkbox" name="besoins" id="personnel"><label for="personnel">Personnel de service</label><br>
+                            <input type="checkbox" name="besoins" id="deco-buffet"><label for="deco-buffet">Décoration de buffet</label><br>
+                            <input type="checkbox" name="besoins" id="deco-floral"><label for="deco-floral">Décoration florale</label><br>
+                            <input type="checkbox" name="besoins" id="table"><label for="table">Centre de table en fleurs fraiches</label><br>
+                            <input type="checkbox" name="besoins" id="nappage"><label for="nappage">Nappage</label><br>
+                            <input type="checkbox" name="besoins" id="musique"><label for="musique">Animation musicale</label><br>
+                            <input type="checkbox" name="besoins" id="salle"><label for="salle">Salles de réception</label><br>
+                            <label for="besoins-autres">Autres : </label><input type="text" name="besoins" id="besoins-autres">
+                        </div>
                     </div>
-                </div>
-<!--  -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <div>Personnels souhaités :</div>
+                </fieldset>
+        <!-- FORMULAIRE (PARTIE 3)
+        DE BUDGET -->
+                <fieldset id="budget">
+                    <legend>Votre budget</legend>
+        <!-- BUDGET == 
+        $BUDGET -->
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <div>Budget par personne :</div>
+                        </div>
+                        <div class="form-element-choices">
+                            <label for="budget-entre">Entre </label><input type="text" name="budget-entre" id="budget-entre">
+                            <label for="budget-and">et </label><input type="text" name="budget-and" id="budget-and">
+                        </div>
                     </div>
-                    <div class="form-element-choices">
-                        <input type="radio" name="radio" id="yes"><label for="yes">Oui</label>
-                        <input type="radio" name="radio" id="no"><label for="no">Non</label>
+                </fieldset>
+        <!-- FORMULAIRE (PARTIE 4) 
+        DE COORDONNEES -->
+                <fieldset id="coordonnees">
+                    <legend>Vos coordonnées</legend>
+        <!-- COORDONNEES
+        == NAME -->
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="nom">Nom :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="text" name="nom" id="nom">
+                        </div>
                     </div>
-                </div>
-            </fieldset>
-        </form>
-
-<!-- FORMULAIRE (PARTIE 2)
-    DE SERVICES -->
-        <form action="" class="services">
-            <fieldset>
-                <legend>Services</legend>
-<!-- SERVICES
-    == $ -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <div>Boissons alcolisées :</div>
+        <!-- COORDONNEES
+        == FIRST NAME  -->
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="prenom">Prénom :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="text" name="prenom" id="prenom">
+                        </div>
                     </div>
-                    <div class="form-element-choices">
-                        <input type="checkbox" name="alcool" id="rouge"><label for="rouge">Vin rouge</label><br>
-                        <input type="checkbox" name="alcool" id="blanc"><label for="blanc">Vin blanc</label><br>
-                        <input type="checkbox" name="alcool" id="rose"><label for="rose">Vin rosé</label><br>
-                        <input type="checkbox" name="alcool" id="champagne"><label for="champagne">Champagne</label><br>
-                        <input type="checkbox" name="alcool" id="cremant"><label for="cremant">Crémant</label><br>
-                        <input type="checkbox" name="alcool" id="kir"><label for="kir">Kir</label><br>
-                        <input type="checkbox" name="alcool" id="fort"><label for="fort">Alcool fort</label><br>
+        <!-- COORDONNEES
+        == ENTREPRISE NAME  -->
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="societe">Société :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="text" name="societe" id="societe">
+                        </div>
                     </div>
-                </div>
-<!-- SERVICES
-    == $ -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <div>Boissons non alcolisées :</div>
+        <!-- COORDONNEES
+        == ADRESSE -->
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="adresse">Adresse :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="text" name="adresse" id="adresse">
+                        </div>
                     </div>
-                    <div class="form-element-choices">
-                        <input type="checkbox" name="boissons" id="eau"><label for="eau">Eaux minerales plate et gazeuse</label><br>
-                        <input type="checkbox" name="boissons" id="cafe"><label for="cafe">Café</label><br>
-                        <input type="checkbox" name="boissons" id="soft"><label for="soft">Soft (jus de fruits et sodas)</label><br>
+        <!-- COORDONNEES
+        == TELEPHONE -->
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="telephone">Téléphone :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="tel" name="telephone" id="telephone">
+                        </div>
                     </div>
-                </div>
-<!-- SERVICES
-    == $ -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <div>Besoins complémentaires :</div>
+        <!-- COORDONNEES
+        == EMAIL -->
+                    <div class="form-element flex">
+                        <div class="form-element-title">
+                            <label for="email">Email :</label>
+                        </div>
+                        <div class="form-element-choices">
+                            <input type="email" name="email" id="email">
+                        </div>
                     </div>
-                    <div class="form-element-choices">
-                        <input type="checkbox" name="besoins" id="jetable"><label for="jetable">Materiel jetable</label><br>
-                        <input type="checkbox" name="besoins" id="a-louer"><label for="a-louer">Materiel de réception à louer</label><br>
-                        <input type="checkbox" name="besoins" id="personnel"><label for="personnel">Personnel de service</label><br>
-                        <input type="checkbox" name="besoins" id="deco-buffet"><label for="deco-buffet">Décoration de buffet</label><br>
-                        <input type="checkbox" name="besoins" id="deco-floral"><label for="deco-floral">Décoration florale</label><br>
-                        <input type="checkbox" name="besoins" id="table"><label for="table">Centre de table en fleurs fraiches</label><br>
-                        <input type="checkbox" name="besoins" id="nappage"><label for="nappage">Nappage</label><br>
-                        <input type="checkbox" name="besoins" id="musique"><label for="musique">Animation musicale</label><br>
-                        <input type="checkbox" name="besoins" id="salle"><label for="salle">Salles de réception</label><br>
-                        <label for="besoins-autres">Autres : </label><input type="text" name="besoins" id="besoins-autres">
-                    </div>
-                </div>
-            </fieldset>
-        </form>
-
-<!-- FORMULAIRE (PARTIE 3)
-    DE BUDGET -->
-        <form action="" class="budget">
-            <fieldset>
-                <legend>Votre budget</legend>
-<!-- BUDGET == 
-    $BUDGET -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <div>Budget par personne :</div>
-                    </div>
-                    <div class="form-element-choices">
-                        <label for="budget-entre">Entre </label><input type="text" name="budget-entre" id="budget-entre">
-                        <label for="budget-and">et </label><input type="text" name="budget-and" id="budget-and">
-                    </div>
-                </div>
-            </fieldset>
-        </form>
-
-<!-- FORMULAIRE (PARTIE 4) 
-    DE COORDONNEES -->
-        <form action="" class="coordonnees">
-            <fieldset>
-                <legend>Vos coordonnées</legend>
-<!-- COORDONNEES
-    == NAME -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="nom">Nom :</label>
-                    </div>
-                    <div class="form-element-choices">
-                        <input type="text" name="nom" id="nom">
-                    </div>
-                </div>
-<!-- COORDONNEES
-    == FIRST NAME  -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="prenom">Prénom :</label>
-                    </div>
-                    <div class="form-element-choices">
-                        <input type="text" name="prenom" id="prenom">
-                    </div>
-                </div>
-<!-- COORDONNEES
-    == ENTREPRISE NAME  -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="societe">Société :</label>
-                    </div>
-                    <div class="form-element-choices">
-                        <input type="text" name="societe" id="societe">
-                    </div>
-                </div>
-<!-- COORDONNEES
-    == ADRESSE -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="adresse">Adresse :</label>
-                    </div>
-                    <div class="form-element-choices">
-                        <input type="text" name="adresse" id="adresse">
-                    </div>
-                </div>
-<!-- COORDONNEES
-    == TELEPHONE -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="telephone">Téléphone :</label>
-                    </div>
-                    <div class="form-element-choices">
-                        <input type="tel" name="telephone" id="telephone">
-                    </div>
-                </div>
-<!-- COORDONNEES
-    == EMAIL -->
-                <div class="form-element flex">
-                    <div class="form-element-title">
-                        <label for="email">Email :</label>
-                    </div>
-                    <div class="form-element-choices">
-                        <input type="email" name="email" id="email">
-                    </div>
-                </div>
-            </fieldset>
-        </form>
-    </main>
+                </fieldset>
+                <input type="submit" value="VALIDER">
+            </form>
+        </section>
+    <script src="/js/devis.js"></script>
 </body>
 </html>

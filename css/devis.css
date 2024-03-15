@@ -1,13 +1,16 @@
 .flex-columns{
     flex-direction: column;
 }
-#devis{
-    width: 70%;
-    margin: 1em auto;
-    border: solid 2px black;
-    
+.devis{
+    padding: 1em 0;
+    background-color: grey;
 }
-#devis fieldset{
+.devis-form{
+    width: 70%;
+    border: solid 2px black;
+    margin: 0 auto;
+}
+.devis fieldset{
     margin: 1em;
     border: solid 2px red;
     background-color: rgb(203, 202, 202);
