@@ -222,12 +222,12 @@
                 </div>
             </div>
             <div class="formulaire">
-                <form action="post">
+                <form onsubmit="returnContact(); event.preventDefault()" name="formContact">
                     <input type="text" name="nom" placeholder="NOM"><br>
                     <input type="text" name="societe" placeholder="SOCIETE*"><br>
                     <input type="email" name="email" placeholder="EMAIL*"><br>
                     <input type="tel" name="telephone" placeholder="TEL*"><br>
-                    <textarea placeholder="MESSAGE*"></textarea><br>
+                    <textarea name="message" placeholder="MESSAGE*"></textarea><br>
                     <input id="send" type="submit" value="ENVOYER">
                 </form>
             </div>
@@ -458,5 +458,6 @@ CECI CONTIENT LE DEVIS ENTIER, PAR DEFAUT CACHER
     <script src="js/index.js"></script>
     <script src="js/devis.js"></script>
     <script src="js/dark.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
