@@ -22,6 +22,12 @@ function enableDarkMode() {
     document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(25, 25, 25)"
     document.getElementsByTagName("body")[0].style.color = "white"
     document.getElementById("footer-a").style.color = "white"
+    document.querySelector("footer").style.borderTop = "solid 2px white"
+    document.getElementById("reception").style.backgroundColor = "rgb(25, 25, 25)"
+    document.getElementById("services").style.backgroundColor = "rgb(25, 25, 25)"
+    document.getElementById("budget").style.backgroundColor = "rgb(25, 25, 25)"
+    document.getElementById("coordonnees").style.backgroundColor = "rgb(25, 25, 25)"
+    document.forms["devis"].style.borderColor = "white"
 }
 function disableDarkMode() {
     document.getElementById("plateau-repas").style.backgroundColor = "rgb(208, 205, 205)"
@@ -34,4 +40,10 @@ function disableDarkMode() {
     document.getElementsByTagName("body")[0].style.backgroundColor = "white"
     document.getElementsByTagName("body")[0].style.color = "black"
     document.getElementById("footer-a").style.color = "black"
+    document.querySelector("footer").style.borderTop = "solid 2px black"
+    document.getElementById("reception").style.backgroundColor = "rgb(208, 205, 205)"
+    document.getElementById("services").style.backgroundColor = "rgb(208, 205, 205)"
+    document.getElementById("budget").style.backgroundColor = "rgb(208, 205, 205)"
+    document.getElementById("coordonnees").style.backgroundColor = "rgb(208, 205, 205)"
+    document.forms["devis"].style.borderColor = "black"
 }
